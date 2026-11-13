@@ -1,4 +1,7 @@
 {
+  "buildCommand": "cd aljazari-academy && npm run build",
+  "installCommand": "npm install --legacy-peer-deps",
+  "outputDirectory": "aljazari-academy/dist",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],
