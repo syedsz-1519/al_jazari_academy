@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=360, initial-scale=1.0">
+  <title>الجزری اکیڈمی - دراز مینو (اردو ورژن)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#17316b',
+            'primary-dark': '#0c1a3a',
+            'primary-container': '#1b3879',
+            secondary: '#c8a45d',
+            'secondary-light': '#fdf8ee',
+            accent: '#0d9488',
+            surface: '#f7f9fd',
+            'surface-bright': '#ffffff',
+            'surface-dim': '#eef2f8',
+            'surface-container-low': '#f3f6fc',
+            'surface-container': '#eaf0f9',
+            'surface-container-high': '#dfe7f4',
+            'on-surface': '#191c20',
+            'on-surface-variant': '#43474e',
+            outline: '#74777f',
+            'outline-variant': '#c4c7d0',
+            whatsapp: '#25D366'
+          },
+          fontFamily: {
+            urdu: ['Noto Nastaliq Urdu', 'Amiri', 'serif'],
+            quran: ['Amiri', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            hindi: ['Noto Sans Devanagari', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      width: 360px;
+      margin: 0 auto;
+      background-color: #0b1938;
+      font-family: 'Noto Nastaliq Urdu', 'Amiri', serif;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    .urdu-line-height {
+      line-height: 2.2;
+    }
+    .arabic-calligraphy {
+      font-family: 'Amiri', serif;
+      direction: rtl;
+    }
+  </style>
+</head>
+<body class="relative min-h-screen bg-slate-900 text-on-surface">
+
+  <!-- Background Dimmed Mock App View -->
+  <div class="fixed inset-0 w-full h-full bg-[#0b1733]/60 backdrop-blur-sm z-0 pointer-events-none"></div>
+
+  <!-- Slide-in Drawer Container (RTL from Right to Left) -->
+  <aside class="relative z-10 w-[310px] min-h-screen bg-white shadow-2xl flex flex-col justify-between overflow-y-auto border-l border-slate-200">
+    
+    <!-- Top Branding & Header -->
+    <div>
+      <div class="relative bg-gradient-to-br from-[#0b1938] via-[#17316b] to-[#1e3e85] p-5 text-white overflow-hidden">
+        <!-- Subtle Star Motif Pattern -->
+        <div class="absolute -left-6 -top-6 w-32 h-32 opacity-10 pointer-events-none">
+          <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M50 0 L61 38 L100 38 L68 62 L79 100 L50 76 L21 100 L32 62 L0 38 L39 38 Z" fill="white" />
+          </svg>
+        </div>
+
+        <!-- Header Row: Close Button + Logo/Emblem -->
+        <div class="flex items-center justify-between gap-3 mb-4">
+          <!-- Logo & Brand Badge -->
+          <div class="flex items-center gap-2.5">
+            <div class="w-10 h-10 rounded-xl bg-amber-400 text-primary flex items-center justify-center font-bold shadow-md ring-2 ring-amber-300/40">
+              <i class="fa-solid fa-book-quran text-lg"></i>
+            </div>
+            <div>
+              <div class="font-bold text-base tracking-tight leading-tight flex items-center gap-1.5 font-sans">
+                AL-JAZARI ACADEMY
+              </div>
+              <div class="text-[11px] text-amber-200/90 font-medium font-urdu leading-none mt-1">
+                تعلیمی اکیڈمی برائے علومِ قرآن
+              </div>
+            </div>
+          </div>
+
+          <!-- Close Icon Button -->
+          <button class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 active:scale-95 flex items-center justify-center text-white/90 transition-all border border-white/10">
+            <i class="fa-solid fa-xmark text-sm"></i>
+          </button>
+        </div>
+
+        <!-- Quranic Verse Banner -->
+        <div class="bg-white/10 rounded-xl p-2.5 border border-white/15 backdrop-blur-sm text-center mb-4">
+          <p class="arabic-calligraphy text-amber-300 text-[15px] font-bold leading-relaxed">
+            اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ
+          </p>
+          <p class="text-[11px] text-slate-200 font-urdu leading-none mt-1">
+            سورۃ العلق • آیت ۱
+          </p>
+        </div>
+
+        <!-- Language Switcher Segmented Control (Active: اردو) -->
+        <div class="bg-black/30 p-1 rounded-xl flex items-center justify-between gap-1 border border-white/10">
+          <button class="flex-1 py-1.5 px-2 rounded-lg text-[12px] font-medium text-slate-300 hover:text-white font-sans text-center transition-colors">
+            English
+          </button>
+          <button class="flex-1 py-1.5 px-2 rounded-lg text-[12px] font-medium text-slate-300 hover:text-white font-hindi text-center transition-colors">
+            हिन्दी
+          </button>
+          <button class="flex-1 py-1.5 px-2 rounded-lg text-[12px] font-bold bg-white text-primary shadow-sm font-urdu text-center leading-none">
+            اردو
+          </button>
+        </div>
+      </div>
+
+      <!-- Navigation Links List (RTL Urdu) -->
+      <nav class="p-3 space-y-1">
+        
+        <!-- Home Link (Active State) -->
+        <a href="#" class="flex items-center justify-between p-2.5 rounded-xl bg-primary/10 text-primary font-bold transition-all group">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-primary text-white flex items-center justify-center text-sm shadow-sm">
+              <i class="fa-solid fa-house"></i>
+            </span>
+            <span class="text-sm font-semibold font-urdu">صفحہ اول (ہوم)</span>
+          </div>
+          <i class="fa-solid fa-chevron-left text-xs text-primary/70 transition-transform group-hover:-translate-x-1"></i>
+        </a>
+
+        <!-- Courses Link -->
+        <a href="#" class="flex items-center justify-between p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 font-medium transition-all group">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center text-sm">
+              <i class="fa-solid fa-book-open-reader"></i>
+            </span>
+            <span class="text-sm font-urdu">قرآنی کورسز</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-primary text-white font-sans">۴ شعبہ جات</span>
+            <i class="fa-solid fa-chevron-left text-xs text-slate-400 transition-transform group-hover:-translate-x-1"></i>
+          </div>
+        </a>
+
+        <!-- Ilm Hub Link -->
+        <a href="#" class="flex items-center justify-between p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 font-medium transition-all group">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center text-sm">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </span>
+            <span class="text-sm font-urdu">علم ہب (وسائل)</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-800 font-urdu border border-amber-300">مفت ٹولز</span>
+            <i class="fa-solid fa-chevron-left text-xs text-slate-400 transition-transform group-hover:-translate-x-1"></i>
+          </div>
+        </a>
+
+        <!-- Fees & FAQ Link -->
+        <a href="#" class="flex items-center justify-between p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 font-medium transition-all group">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center text-sm">
+              <i class="fa-solid fa-tags"></i>
+            </span>
+            <span class="text-sm font-urdu">فیس اور عمومی سوالات</span>
+          </div>
+          <i class="fa-solid fa-chevron-left text-xs text-slate-400 transition-transform group-hover:-translate-x-1"></i>
+        </a>
+
+        <!-- About Academy Link -->
+        <a href="#" class="flex items-center justify-between p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 font-medium transition-all group">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center text-sm">
+              <i class="fa-solid fa-shield-halved"></i>
+            </span>
+            <span class="text-sm font-urdu">اکیڈمی کا تعارف</span>
+          </div>
+          <i class="fa-solid fa-chevron-left text-xs text-slate-400 transition-transform group-hover:-translate-x-1"></i>
+        </a>
+
+        <!-- Sanad Verification Link -->
+        <a href="#" class="flex items-center justify-between p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 font-medium transition-all group">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center text-sm">
+              <i class="fa-solid fa-certificate"></i>
+            </span>
+            <span class="text-sm font-urdu">تصدیقِ سند و اجازت</span>
+          </div>
+          <span class="w-2 h-2 rounded-full bg-amber-500 mr-1"></span>
+        </a>
+
+        <!-- Privacy & Terms Link -->
+        <a href="#" class="flex items-center justify-between p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 font-medium transition-all group">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center text-sm">
+              <i class="fa-solid fa-lock"></i>
+            </span>
+            <span class="text-sm font-urdu">پرائیویسی و شرائط</span>
+          </div>
+          <i class="fa-solid fa-chevron-left text-xs text-slate-400 transition-transform group-hover:-translate-x-1"></i>
+        </a>
+
+        <!-- Contact Us Link -->
+        <a href="#" class="flex items-center justify-between p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 font-medium transition-all group">
+          <div class="flex items-center gap-3">
+            <span class="w-8 h-8 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center text-sm">
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            <span class="text-sm font-urdu">رابطہ کیجیے</span>
+          </div>
+          <i class="fa-solid fa-chevron-left text-xs text-slate-400 transition-transform group-hover:-translate-x-1"></i>
+        </a>
+
+      </nav>
+
+      <!-- Admissions Desk Quick Action Card -->
+      <div class="mx-3 my-2 p-3 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm">
+        <div class="flex items-center gap-2 mb-2.5">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span class="text-[11px] font-bold text-slate-700 font-urdu">بنگلور ایڈمیشن ڈیسک • لائیو فعال</span>
+        </div>
+
+        <div class="space-y-2">
+          <!-- WhatsApp CTA -->
+          <a href="https://wa.me/919591250910" target="_blank" class="w-full flex items-center justify-center gap-2 py-2 px-3 rounded-xl bg-[#25D366] text-white font-bold text-xs shadow-sm hover:brightness-105 active:scale-[0.98] transition-all">
+            <i class="fa-brands fa-whatsapp text-sm"></i>
+            <span class="font-urdu">واٹس ایپ پر رابطہ (+91 9591250910)</span>
+          </a>
+
+          <!-- Direct Phone Call CTA -->
+          <a href="tel:+919591250910" class="w-full flex items-center justify-center gap-2 py-2 px-3 rounded-xl bg-primary/10 text-primary hover:bg-primary/15 font-bold text-xs transition-all">
+            <i class="fa-solid fa-phone-volume text-xs"></i>
+            <span class="font-urdu">براہِ راست کال کیجیے</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Instagram Channel Card -->
+      <div class="mx-3 mb-3 p-2.5 rounded-xl bg-gradient-to-r from-pink-50 to-rose-50 border border-pink-200/80 flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 text-white flex items-center justify-center text-sm shadow-sm">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div>
+            <div class="text-[11px] font-bold text-slate-800 font-sans" dir="ltr">@al_jazari_educational_academy</div>
+            <div class="text-[10px] text-slate-500 font-urdu">روزانہ تجوید اسباق و قرآنی رہنمائی</div>
+          </div>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-slate-400"></i>
+      </div>
+
+    </div>
+
+    <!-- Drawer Footer / Version & Location -->
+    <div class="p-3 bg-slate-50 border-t border-slate-200 flex items-center justify-between text-[11px] text-slate-500 font-urdu">
+      <div class="flex items-center gap-1.5">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+        <span class="font-sans text-[10px]">Version v2.4.0</span>
+      </div>
+      <div class="flex items-center gap-1">
+        <i class="fa-solid fa-location-dot text-[10px] text-primary"></i>
+        <span>بنگلور، بھارت</span>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- Floating WhatsApp Quick Button -->
+  <div class="fixed bottom-6 left-6 z-20">
+    <button class="w-12 h-12 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg hover:scale-105 active:scale-95 transition-transform">
+      <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </button>
+  </div>
+
+</body>
+</html>

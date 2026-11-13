@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Noto+Serif:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-tertiary-fixed-variant": "#005232",
+          "error": "#ba1a1a",
+          "on-error-container": "#93000a",
+          "on-secondary-container": "#785a18",
+          "inverse-on-surface": "#eff1f5",
+          "tertiary-fixed": "#8df8bd",
+          "outline": "#757781",
+          "on-primary": "#ffffff",
+          "on-surface": "#181c1f",
+          "secondary": "#775a17",
+          "primary": "#001b4f",
+          "outline-variant": "#c5c6d1",
+          "on-background": "#181c1f",
+          "on-primary-container": "#849bdc",
+          "on-error": "#ffffff",
+          "on-secondary-fixed": "#261900",
+          "surface-bright": "#f7f9fd",
+          "secondary-fixed": "#ffdea3",
+          "surface-container-low": "#f2f4f8",
+          "surface-container": "#eceef2",
+          "inverse-primary": "#b2c5ff",
+          "surface-dim": "#d8dade",
+          "on-surface-variant": "#444650",
+          "secondary-fixed-dim": "#e9c175",
+          "error-container": "#ffdad6",
+          "surface": "#f7f9fd",
+          "primary-fixed-dim": "#b2c5ff",
+          "on-tertiary-fixed": "#002112",
+          "primary-container": "#17316b",
+          "surface-container-lowest": "#ffffff",
+          "tertiary": "#002514",
+          "background": "#f7f9fd",
+          "inverse-surface": "#2d3134",
+          "primary-fixed": "#dae2ff",
+          "secondary-container": "#fed486",
+          "surface-tint": "#455c98",
+          "on-secondary": "#ffffff",
+          "surface-variant": "#e0e3e6",
+          "on-tertiary": "#ffffff",
+          "on-secondary-fixed-variant": "#5d4200",
+          "on-tertiary-container": "#43b07b",
+          "surface-container-highest": "#e0e3e6",
+          "surface-container-high": "#e6e8ec",
+          "tertiary-fixed-dim": "#71dba2",
+          "on-primary-fixed-variant": "#2d447f",
+          "on-primary-fixed": "#001848",
+          "tertiary-container": "#003d24"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-xl": "2.5rem",
+          "space-xs": "0.25rem",
+          "margin-mobile": "3rem",
+          "margin": "1.5rem",
+          "space-sm": "0.5rem",
+          "space-lg": "1.5rem",
+          "gutter": "1.5rem",
+          "margin-desktop": "5.5rem",
+          "space-md": "1rem"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "arabic-verse": [
+            "Noto Serif"
+          ],
+          "caption": [
+            "Inter"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl": [
+            "52px",
+            {
+              "lineHeight": "64px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "22px",
+            {
+              "lineHeight": "30px",
+              "fontWeight": "600"
+            }
+          ],
+          "arabic-verse": [
+            "28px",
+            {
+              "lineHeight": "56px",
+              "fontWeight": "400"
+            }
+          ],
+          "caption": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl-mobile": [
+            "38px",
+            {
+              "lineHeight": "48px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(23,49,107,0.06)]"><div class="h-20 max-w-7xl mx-auto px-6 flex items-center justify-between gap-4"><div class="flex items-center gap-3 shrink-0"><img alt="Brand logo redesign sheet for AL-JAZARI EDUCATIONAL ACADEMY with primary horizontal logo, stacked logo, squircle and circular app icons, favicon scaling down to 32px, monochrome navy, and white reversed version for dark backgrounds. Features a modern geometric open Quran on a crossed rehal with 5 rising golden stars and an 8-point geometric star accent in navy #17316B and soft gold #C8A35A." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDGt43QTVor0qI23CZtDlR1IG2FGZcGClqIspTp9yCfSMCh4O-6VW1gT-y1Ljj3sRJIYCE_RVwoKDgXhAJKwzaAeP_93I87kLPRQR7mEw8FhWbEs0Fmv4Az_mAk9neYU6NPXDxUrZIArcD8ea5TKrzTAbvtMWpyEeWBQFytFjY3xSqHfNIX3LiDnOR9Vk_jj7tqL0Q5BUiLzJXsIsRjOwXF2uxSyGSgh_z4KRp8ubqBKg"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight hidden sm:inline-block">Al-Jazari Academy</span></div><nav class="hidden lg:flex items-center gap-1 bg-surface-container-low px-2 py-1.5 rounded-full" data-active-classes="bg-primary-fixed text-primary font-semibold shadow-sm"><a class="px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface transition-all" data-path="home" href="#">Home</a><a class="px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface transition-all" data-path="courses" href="#">Courses</a><a aria-current="page" class="px-4 py-2 rounded-full transition-all bg-primary-fixed text-primary font-semibold shadow-sm" data-path="ilm-hub" href="#">Ilm Hub</a><a class="px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface transition-all" data-path="achievements" href="#">Achievements</a><a class="px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface transition-all" data-path="about" href="#">About</a><a class="px-4 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface transition-all" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-4 shrink-0"><a class="hidden xl:flex items-center gap-2 font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="tel:+919591250910"><span class="material-symbols-outlined text-[18px] text-primary">call</span><span>+91 9591250910</span></a><a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md px-5 py-2.5 rounded-xl hover:bg-primary-container hover:text-on-primary transition-all shadow-[0_2px_8px_rgba(0,27,79,0.18)]" data-path="enroll-now" href="#">Enroll Now</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="max-w-7xl mx-auto px-6 py-10"><div class="flex flex-col w-full">
+<!-- Hub Hero Header with Search & Filter Tabs -->
+<section class="relative w-full pb-10">
+<div class="relative bg-surface-container-lowest rounded-[28px] p-8 md:p-12 shadow-[0_6px_20px_rgba(23,49,107,0.06)] overflow-hidden">
+<!-- Ambient Geometry Watermark -->
+<svg class="absolute -right-16 -top-16 w-80 h-80 opacity-[0.04] text-primary pointer-events-none" fill="currentColor" viewbox="0 0 100 100">
+<polygon points="50 0, 61 35, 98 35, 68 57, 79 91, 50 70, 21 91, 32 57, 2 35, 39 35"></polygon>
+</svg>
+<div class="absolute -left-20 -bottom-20 w-72 h-72 rounded-full bg-primary-fixed/30 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-4xl space-y-4">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary-fixed text-primary font-label-md text-caption">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Interactive Student &amp; Public Utilities • Free Academy Resources</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">
+          Ilm Hub: Learn, Practise, Grow
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+          A dedicated digital sanctuary of interactive Quranic tools, phonetics guides, daily reflections, and scholarly resources crafted for your lifelong Hifz journey.
+        </p>
+<!-- Search Bar -->
+<div class="pt-4 max-w-2xl">
+<div class="relative flex items-center bg-surface-container-low rounded-[16px] px-4 py-3 shadow-inner">
+<span class="material-symbols-outlined text-primary text-[22px] mr-3">search</span>
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none" id="ilmSearch" placeholder="Search utilities, articles, tajweed rules, or downloads..." type="text"/>
+<div class="hidden sm:flex items-center gap-1 bg-surface-container-lowest px-2.5 py-1 rounded-lg text-outline shadow-sm">
+<span class="font-caption text-caption text-on-surface-variant font-medium">Ctrl + K</span>
+</div>
+</div>
+</div>
+<!-- Filter Pills Bar -->
+<div class="pt-4 flex items-center gap-2.5 overflow-x-auto pb-1 no-scrollbar">
+<button class="hub-filter-btn px-4 py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm hover:opacity-95 transition-all" data-category="all">
+            All Resources
+          </button>
+<button class="hub-filter-btn px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-primary-fixed hover:text-primary transition-all" data-category="hifz">
+            Hifz Tools
+          </button>
+<button class="hub-filter-btn px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-primary-fixed hover:text-primary transition-all" data-category="tajweed">
+            Tajweed &amp; Makhraj
+          </button>
+<button class="hub-filter-btn px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-primary-fixed hover:text-primary transition-all" data-category="tafseer">
+            Tafseer
+          </button>
+<button class="hub-filter-btn px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-primary-fixed hover:text-primary transition-all" data-category="mindset">
+            Motivation &amp; Mindset
+          </button>
+<button class="hub-filter-btn px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-primary-fixed hover:text-primary transition-all" data-category="webinars">
+            Masterclass Webinars
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Bento Grid: 4 Core Student Tools -->
+<section class="w-full pb-16">
+<div class="flex items-center justify-between mb-8">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-md text-caption uppercase tracking-wider text-secondary font-semibold">Core Student Utilities</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-1">Interactive Learning Deck</h2>
+</div>
+<span class="hidden md:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed/60 text-primary font-caption text-caption">
+<span class="material-symbols-outlined text-[15px]">sync_saved_locally</span> Auto-synced progress
+      </span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<!-- TOOL 1: Hifz Duration Calculator (Span 7) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-[20px] p-7 shadow-[0_6px_20px_rgba(23,49,107,0.07)] flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-4 mb-4">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-full bg-primary-fixed flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">calculate</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Hifz Duration Calculator</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Estimate your complete Quran memorisation timeline based on your daily capacity.</p>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-primary-fixed/50 text-primary font-caption text-caption whitespace-nowrap">604 Pages Total</span>
+</div>
+<!-- Slider Controls -->
+<div class="mt-6 p-5 bg-surface-container-low rounded-[16px] space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Pace / Capacity:</span>
+<span class="font-headline-sm text-headline-sm text-primary" id="paceDisplay">1 Page / Day (Standard Sabak)</span>
+</div>
+<input class="w-full accent-primary h-2 bg-outline-variant/50 rounded-lg cursor-pointer" id="hifzPaceSlider" max="4" min="0" step="1" type="range" value="3"/>
+<div class="flex justify-between font-caption text-caption text-on-surface-variant px-1">
+<span>5 Verses</span>
+<span>10 Verses</span>
+<span>Half Page</span>
+<span class="font-semibold text-primary">1 Page</span>
+<span>2 Pages</span>
+</div>
+</div>
+<!-- Dynamic Output Card -->
+<div class="mt-6 p-6 rounded-[16px] bg-secondary-fixed/20 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="space-y-2">
+<span class="font-label-md text-caption uppercase text-secondary font-semibold tracking-wider">Projected Completion Timeline</span>
+<div class="flex items-baseline gap-3">
+<div class="font-headline-xl text-headline-xl text-primary font-bold" id="projectedTime">~1.8 Years</div>
+<span class="font-body-md text-body-md text-on-surface-variant" id="projectedMonths">(approx 20 Months)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface" id="milestoneBreakdown">
+                Juz 30: 20 Days • 5 Juz: 3.3 Months • Full Mushaf: Nov 2027
+              </p>
+</div>
+<!-- SVG Circular Metric Gauge -->
+<div class="relative w-24 h-24 shrink-0 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<circle class="stroke-outline-variant/40" cx="18" cy="18" fill="none" r="15.915" stroke-width="3.5"></circle>
+<circle class="stroke-primary transition-all duration-500" cx="18" cy="18" fill="none" id="calculatorGauge" r="15.915" stroke-dasharray="100, 100" stroke-dashoffset="25" stroke-linecap="round" stroke-width="3.5"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-[20px] text-primary">auto_stories</span>
+<span class="font-caption text-[11px] text-primary font-bold">604 p.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-2 text-on-surface-variant font-caption text-caption">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Calculated with 20% dedicated Sabki &amp; Manzil revision leeway</span>
+</div>
+<button class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-label-md text-label-md px-6 py-3.5 rounded-[14px] hover:bg-primary-container transition-all shadow-sm w-full sm:w-auto" onclick="triggerPdfExportNotice()">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span>Generate Schedule PDF</span>
+</button>
+</div>
+</div>
+<!-- TOOL 2: Weekly Revision & Sabki Tracker (Span 5) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-[20px] p-7 shadow-[0_6px_20px_rgba(23,49,107,0.07)] flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-full bg-secondary-fixed/50 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">local_fire_department</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Revision &amp; Sabki Tracker</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Daily consistency retention loop</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-caption text-caption font-semibold">Live Habit</span>
+</div>
+<div class="p-4 rounded-[16px] bg-primary text-on-primary flex items-center justify-between shadow-sm my-4">
+<div>
+<div class="font-headline-md text-headline-md font-bold tracking-tight text-secondary-fixed">
+                🔥 14-Day Revision Streak!
+              </div>
+<p class="font-caption text-caption text-primary-fixed-dim mt-0.5">Top 5% consistency across all active cohorts</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-secondary-fixed font-bold">
+              +14
+            </div>
+</div>
+<!-- 7-Day Checklist -->
+<div class="space-y-3 mt-4">
+<div class="flex items-center justify-between text-on-surface font-label-md text-caption font-semibold">
+<span>This Week's Recitation Commitment</span>
+<span class="text-secondary">6 of 7 Days Completed</span>
+</div>
+<div class="grid grid-cols-7 gap-1.5 text-center">
+<div class="p-2.5 rounded-xl bg-primary-fixed text-primary flex flex-col items-center">
+<span class="font-caption text-[11px] font-medium">Mon</span>
+<span class="material-symbols-outlined text-[16px] font-bold">check_circle</span>
+</div>
+<div class="p-2.5 rounded-xl bg-primary-fixed text-primary flex flex-col items-center">
+<span class="font-caption text-[11px] font-medium">Tue</span>
+<span class="material-symbols-outlined text-[16px] font-bold">check_circle</span>
+</div>
+<div class="p-2.5 rounded-xl bg-primary-fixed text-primary flex flex-col items-center">
+<span class="font-caption text-[11px] font-medium">Wed</span>
+<span class="material-symbols-outlined text-[16px] font-bold">check_circle</span>
+</div>
+<div class="p-2.5 rounded-xl bg-primary-fixed text-primary flex flex-col items-center">
+<span class="font-caption text-[11px] font-medium">Thu</span>
+<span class="material-symbols-outlined text-[16px] font-bold">check_circle</span>
+</div>
+<div class="p-2.5 rounded-xl bg-primary-fixed text-primary flex flex-col items-center">
+<span class="font-caption text-[11px] font-medium">Fri</span>
+<span class="material-symbols-outlined text-[16px] font-bold">check_circle</span>
+</div>
+<div class="p-2.5 rounded-xl bg-primary-fixed text-primary flex flex-col items-center">
+<span class="font-caption text-[11px] font-medium">Sat</span>
+<span class="material-symbols-outlined text-[16px] font-bold">check_circle</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low text-on-surface-variant flex flex-col items-center">
+<span class="font-caption text-[11px] font-medium">Sun</span>
+<span class="material-symbols-outlined text-[16px]">radio_button_unchecked</span>
+</div>
+</div>
+</div>
+<!-- Progress Micro Tracker -->
+<div class="mt-5 space-y-2">
+<div class="flex justify-between font-caption text-caption text-on-surface-variant">
+<span>Weekly Target: 7 / 7 Juz reviewed</span>
+<span class="text-primary font-semibold">Next: 21-Day Shield Badge</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 86%;"></div>
+</div>
+</div>
+</div>
+<button class="mt-6 w-full inline-flex items-center justify-center gap-2 bg-primary-fixed text-primary font-label-md text-label-md px-6 py-3.5 rounded-[14px] hover:bg-primary hover:text-on-primary transition-all shadow-sm" onclick="toggleSabakLogged(this)">
+<span class="material-symbols-outlined text-[20px]">edit_calendar</span>
+<span id="sabakLogText">Log Today's Sabak &amp; Manzil</span>
+</button>
+</div>
+<!-- TOOL 3: Interactive Makhraj Anatomical Guide (Span 7) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-[20px] p-7 shadow-[0_6px_20px_rgba(23,49,107,0.07)] flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-4 mb-4">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-full bg-primary-fixed flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">graphic_eq</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Makhraj Anatomical Guide</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Master the 3 Throat Articulation Points (Halq) and their 6 designated letters.</p>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary-fixed/50 text-secondary font-caption text-caption font-semibold">Interactive Diagnostic</span>
+</div>
+<!-- Anatomical Level Clickable Tabs -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3 my-5">
+<button class="makhraj-tab text-left p-3.5 rounded-[16px] bg-primary text-on-primary shadow-sm transition-all" id="tab-aqsa" onclick="switchMakhrajPoint('aqsa')">
+<div class="font-caption text-[11px] opacity-80 uppercase tracking-wider">Deep Throat</div>
+<div class="font-headline-sm text-headline-sm mt-0.5 font-bold">Aqsa al-Halq</div>
+<div class="font-arabic-verse text-arabic-verse text-secondary-fixed leading-tight mt-1">ء • هـ</div>
+</button>
+<button class="makhraj-tab text-left p-3.5 rounded-[16px] bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" id="tab-wast" onclick="switchMakhrajPoint('wast')">
+<div class="font-caption text-[11px] text-on-surface-variant uppercase tracking-wider">Mid Throat</div>
+<div class="font-headline-sm text-headline-sm mt-0.5 font-semibold text-primary">Wast al-Halq</div>
+<div class="font-arabic-verse text-arabic-verse text-secondary leading-tight mt-1">ع • ح</div>
+</button>
+<button class="makhraj-tab text-left p-3.5 rounded-[16px] bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" id="tab-adna" onclick="switchMakhrajPoint('adna')">
+<div class="font-caption text-[11px] text-on-surface-variant uppercase tracking-wider">Upper Throat</div>
+<div class="font-headline-sm text-headline-sm mt-0.5 font-semibold text-primary">Adna al-Halq</div>
+<div class="font-arabic-verse text-arabic-verse text-secondary leading-tight mt-1">غ • خ</div>
+</button>
+</div>
+<!-- Active Makhraj Detailed Anatomical Card -->
+<div class="p-5 rounded-[16px] bg-surface-container-low" id="makhrajDetailBox">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-2">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<h4 class="font-headline-sm text-headline-sm text-primary" id="makhrajDetailTitle">Aqsa al-Halq (Furthest / Lowest Throat)</h4>
+</div>
+<span class="font-caption text-caption px-2.5 py-1 rounded-full bg-surface-container-lowest text-primary font-medium" id="makhrajVocalZone">Near Vocal Cords</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed" id="makhrajDetailDesc">
+              Originated at the base of the throat closest to the chest. Emits the Hamzah (ء) with light glottal stop and Haa (هـ) with free-flowing soft breath without strain.
+            </p>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-caption text-caption text-on-surface-variant">Scholarly rule: Idh-har Halqi (Clear articulation when followed by Noon Sakinah)</span>
+<span class="font-label-md text-caption font-bold text-secondary">Makhraj #1 of 17</span>
+</div>
+</div>
+</div>
+<!-- Audio Pronunciation Waveform Action -->
+<div class="mt-6 pt-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<button class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-all" id="makhrajAudioBtn" onclick="playMakhrajSample()">
+<span class="material-symbols-outlined text-[20px]" id="playIcon">volume_up</span>
+</button>
+<div>
+<div class="font-label-md text-label-md text-primary font-semibold">Listen to Master Pronunciation</div>
+<div class="font-caption text-caption text-on-surface-variant">Qari Shaykh Dr. Ayman Suwayd standard (Hafs 'an 'Asim)</div>
+</div>
+</div>
+<span class="font-caption text-caption px-3 py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">graphic_eq</span> 48kHz Crystal Audio
+          </span>
+</div>
+</div>
+<!-- TOOL 4: Daily Reminder & Reflection (Span 5) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-[20px] p-7 shadow-[0_6px_20px_rgba(23,49,107,0.07)] flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-3 mb-4">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-full bg-secondary-fixed/50 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">menu_book</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Daily Ayah &amp; Reflection</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Anchoring the heart before daily Sabak</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-caption text-caption font-medium whitespace-nowrap">Updated at Fajr</span>
+</div>
+<!-- Arabic Calligraphy Verse Card -->
+<div class="p-6 rounded-[16px] bg-secondary-fixed/20 text-center my-4 space-y-3">
+<div class="font-arabic-verse text-arabic-verse text-primary leading-loose tracking-wide font-normal">
+              وَقُلْ رَبِّ زِدْنِي عِلْمًا
+            </div>
+<div class="font-body-sm text-body-sm text-on-surface italic">
+              "And say: 'My Lord, increase me in knowledge.'"
+            </div>
+<div class="font-caption text-caption text-secondary font-semibold">
+              Surah Ta-Ha (20:114) • Makki Revelation
+            </div>
+</div>
+<!-- Scholarly Reflection Box (Lavender Tinted) -->
+<div class="p-4 rounded-[16px] bg-primary-fixed/40 space-y-2">
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+<span>Spiritual Anchor: Consistency Over Volume</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Even half a page recited with contemplative Tajweed each morning anchors the heart deeper than rushed chapters recited without presence. Small deeds done continuously are most beloved.
+            </p>
+</div>
+</div>
+<div class="mt-6 pt-4 flex items-center justify-between">
+<button class="inline-flex items-center gap-1.5 text-primary hover:text-secondary font-label-md text-label-md transition-colors" onclick="shareAyahReflection()">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Share Daily Ayah</span>
+</button>
+<button class="inline-flex items-center gap-1.5 text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors" onclick="playAyahAudio()">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+<span>Listen Recitation</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Scholarly Guides & Articles Bento Section -->
+<section class="w-full pb-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-md text-caption uppercase tracking-wider text-secondary font-semibold">Knowledge Base</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-1">Articles &amp; Scholarly Guides</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Practical methodologies formulated by Al-Azhar accredited Huffaz and Tajweed instructors.</p>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary hover:text-secondary transition-colors font-semibold self-start md:self-auto" href="#">
+<span>View Full Knowledge Directory</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- 6 Article Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<article class="bg-surface-container-lowest rounded-[20px] p-6 shadow-[0_6px_20px_rgba(23,49,107,0.06)] hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(23,49,107,0.12)] transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-primary font-caption text-caption font-medium">Hifz Roadmap</span>
+<span class="font-caption text-caption text-on-surface-variant">6 min read</span>
+</div>
+<div class="w-12 h-12 rounded-2xl bg-surface-container-low flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">timelapse</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors leading-snug">
+            How Long Does It Really Take to Memorise the Quran?
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 leading-relaxed">
+            Realistic timelines, adult cognitive pacing, and psychological strategies to prevent premature mid-Juz burnout.
+          </p>
+</div>
+<div class="mt-6 pt-4 flex items-center justify-between text-primary font-label-md text-label-md font-semibold">
+<span>Read Guide</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-container-lowest rounded-[20px] p-6 shadow-[0_6px_20px_rgba(23,49,107,0.06)] hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(23,49,107,0.12)] transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-3 py-1 rounded-full bg-secondary-fixed/50 text-secondary font-caption text-caption font-semibold">Tajweed Phonetics</span>
+<span class="font-caption text-caption text-on-surface-variant">8 min read</span>
+</div>
+<div class="w-12 h-12 rounded-2xl bg-surface-container-low flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">spatial_audio_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors leading-snug">
+            Makhraj Basics: Eliminating Common Phonetic Slips
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 leading-relaxed">
+            Dissecting throat constriction, nasal ghunnah duration, and precise tongue placement for non-native Arab speakers.
+          </p>
+</div>
+<div class="mt-6 pt-4 flex items-center justify-between text-primary font-label-md text-label-md font-semibold">
+<span>Read Guide</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-surface-container-lowest rounded-[20px] p-6 shadow-[0_6px_20px_rgba(23,49,107,0.06)] hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(23,49,107,0.12)] transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-primary font-caption text-caption font-medium">Lifestyle &amp; Habits</span>
+<span class="font-caption text-caption text-on-surface-variant">5 min read</span>
+</div>
+<div class="w-12 h-12 rounded-2xl bg-surface-container-low flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">work_history</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors leading-snug">
+            Balancing Hifz with a Busy Corporate Schedule
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 leading-relaxed">
+            The 20-minute morning Sabak system and commute revision routines tested by working software engineers and doctors.
+          </p>
+</div>
+<div class="mt-6 pt-4 flex items-center justify-between text-primary font-label-md text-label-md font-semibold">
+<span>Read Guide</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="bg-surface-container-lowest rounded-[20px] p-6 shadow-[0_6px_20px_rgba(23,49,107,0.06)] hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(23,49,107,0.12)] transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-caption text-caption font-medium">Retention Mastery</span>
+<span class="font-caption text-caption text-on-surface-variant">7 min read</span>
+</div>
+<div class="w-12 h-12 rounded-2xl bg-surface-container-low flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">all_inclusive</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors leading-snug">
+            Revision Techniques: The Sabak, Sabki &amp; Manzil Trinity
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 leading-relaxed">
+            How classical Madaris achieve permanent lifelong retention without sacrificing or confusing older memorized Juz.
+          </p>
+</div>
+<div class="mt-6 pt-4 flex items-center justify-between text-primary font-label-md text-label-md font-semibold">
+<span>Read Guide</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="bg-surface-container-lowest rounded-[20px] p-6 shadow-[0_6px_20px_rgba(23,49,107,0.06)] hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(23,49,107,0.12)] transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-primary font-caption text-caption font-medium">Spiritual Depth</span>
+<span class="font-caption text-caption text-on-surface-variant">6 min read</span>
+</div>
+<div class="w-12 h-12 rounded-2xl bg-surface-container-low flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">psychology_alt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors leading-snug">
+            Tafseer Tips: Connecting Memorisation with Meaning
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 leading-relaxed">
+            Harnessing Asbab al-Nuzul (historical revelation contexts) to establish unbreakable conceptual memory hooks.
+          </p>
+</div>
+<div class="mt-6 pt-4 flex items-center justify-between text-primary font-label-md text-label-md font-semibold">
+<span>Read Guide</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="bg-surface-container-lowest rounded-[20px] p-6 shadow-[0_6px_20px_rgba(23,49,107,0.06)] hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(23,49,107,0.12)] transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-3 py-1 rounded-full bg-secondary-fixed/50 text-secondary font-caption text-caption font-semibold">Mindset &amp; Barakah</span>
+<span class="font-caption text-caption text-on-surface-variant">4 min read</span>
+</div>
+<div class="w-12 h-12 rounded-2xl bg-surface-container-low flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">favorite</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors leading-snug">
+            The Psychology of Consistency in Islamic Learning
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 leading-relaxed">
+            Converting transient spiritual motivation into automatic neurological habits that survive lethargy and travel.
+          </p>
+</div>
+<div class="mt-6 pt-4 flex items-center justify-between text-primary font-label-md text-label-md font-semibold">
+<span>Read Guide</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</article>
+</div>
+</section>
+<!-- Live Webinars & Masterclasses (Split 2-Column Banner) -->
+<section class="w-full pb-16">
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-3">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-md text-caption uppercase tracking-wider text-secondary font-semibold">Live Virtual Classroom</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-1">Upcoming Live Masterclasses</h2>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-fixed text-primary font-label-md text-caption">
+<span class="material-symbols-outlined text-[16px]">video_camera_front</span>
+<span>Interactive Google Meet Sessions</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+<!-- Webinar 1 -->
+<div class="bg-surface-container-lowest rounded-[20px] p-7 shadow-[0_6px_20px_rgba(23,49,107,0.06)] flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-3 py-1 rounded-full bg-error-container text-on-error-container font-caption text-caption font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+              Live Interactive
+            </span>
+<span class="font-caption text-caption text-on-surface-variant">45 seats remaining</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">
+            Mutashabihat Masterclass: Demystifying Similar Verses Across Juz 1 to 10
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 leading-relaxed">
+            Eliminate confusion between overlapping phrasing in Surah Al-Baqarah, Aal 'Imran, and An-Nisa with Sanad-rooted mnemonic maps.
+          </p>
+<div class="mt-6 p-4 rounded-xl bg-surface-container-low space-y-2.5">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">person_apron</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Ustadh Bilal Tariq (Ten Qira'at Sanad Holder)</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px]">event_available</span>
+<span class="font-body-sm text-body-sm text-on-surface">Saturday, 28 March 2026 • 7:30 PM IST (GMT +5:30)</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+<span class="font-caption text-caption text-on-surface-variant">Free access • Replay recording provided to registrants</span>
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-[14px] hover:bg-primary-container transition-all shadow-sm" onclick="openRegistrationModal('Mutashabihat Masterclass')">
+<span>Register Free</span>
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+</button>
+</div>
+</div>
+<!-- Webinar 2 -->
+<div class="bg-surface-container-lowest rounded-[20px] p-7 shadow-[0_6px_20px_rgba(23,49,107,0.06)] flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="px-3 py-1 rounded-full bg-secondary-fixed/50 text-secondary font-caption text-caption font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px]">event</span>
+              Upcoming Cohort
+            </span>
+<span class="font-caption text-caption text-on-surface-variant">Registration open</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">
+            Makhraj &amp; Vocal Ergonomics: Preventing Throat Strain During Long Tilawah
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 leading-relaxed">
+            Practical posture, diaphragm breathing mechanics, and larynx relaxation techniques for continuous Quranic recitation without vocal fatigue.
+          </p>
+<div class="mt-6 p-4 rounded-xl bg-surface-container-low space-y-2.5">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">person_apron</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Ustadha Maryam Al-Azhari (Egypt Tajweed Faculty)</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px]">event_available</span>
+<span class="font-body-sm text-body-sm text-on-surface">Sunday, 5 April 2026 • 11:00 AM IST (GMT +5:30)</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+<span class="font-caption text-caption text-on-surface-variant">Includes downloadable vocal exercise checklist</span>
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-[14px] hover:bg-primary-container transition-all shadow-sm" onclick="openRegistrationModal('Makhraj &amp; Vocal Ergonomics')">
+<span>Register Free</span>
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Essential Downloadable Study Resources (PDF Cards) -->
+<section class="w-full pb-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-md text-caption uppercase tracking-wider text-secondary font-semibold">Printable Academy Toolkits</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-1">Essential Student Downloads</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Free printable templates, revision diaries, and reference phonetics diagrams.</p>
+</div>
+<div class="flex items-center gap-2 font-caption text-caption text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span>Standardized for A4 / US Letter Home Printing</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Resource 1 -->
+<div class="bg-surface-container-lowest rounded-[20px] p-6 shadow-[0_6px_20px_rgba(23,49,107,0.06)] flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">calendar_view_week</span>
+</span>
+<span class="font-caption text-caption px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant">1.4 MB PDF</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-snug">
+            Al-Jazari Daily Hifz &amp; Revision Planner
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5">
+            Structured 30-day sheet featuring designated checkmarks for daily Sabak, Sabki, and Manzil rounds.
+          </p>
+</div>
+<div class="mt-6 pt-4">
+<button class="w-full inline-flex items-center justify-center gap-2 bg-surface-container-low text-primary font-label-md text-label-md py-3 rounded-[12px] hover:bg-primary-fixed transition-colors" onclick="downloadResource('Al-Jazari Daily Hifz Planner')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download PDF</span>
+</button>
+</div>
+</div>
+<!-- Resource 2 -->
+<div class="bg-surface-container-lowest rounded-[20px] p-6 shadow-[0_6px_20px_rgba(23,49,107,0.06)] flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="w-10 h-10 rounded-xl bg-secondary-fixed/50 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">psychology</span>
+</span>
+<span class="font-caption text-caption px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant">2.8 MB PDF</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-snug">
+            Makhraj &amp; Sifaat Full Phonetic Chart
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5">
+            Full-color anatomical throat, tongue, and lip diagram covering all 17 primary articulation points.
+          </p>
+</div>
+<div class="mt-6 pt-4">
+<button class="w-full inline-flex items-center justify-center gap-2 bg-surface-container-low text-primary font-label-md text-label-md py-3 rounded-[12px] hover:bg-primary-fixed transition-colors" onclick="downloadResource('Makhraj &amp; Sifaat Phonetic Chart')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download PDF</span>
+</button>
+</div>
+</div>
+<!-- Resource 3 -->
+<div class="bg-surface-container-lowest rounded-[20px] p-6 shadow-[0_6px_20px_rgba(23,49,107,0.06)] flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[22px]">checklist</span>
+</span>
+<span class="font-caption text-caption px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant">950 KB PDF</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary leading-snug">
+            Quran Surah &amp; Juz Memorisation Checklist
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5">
+            114 Surah reference directory complete with Ayah counts, Makki/Madani tags, and mutashabihat cross-flags.
+          </p>
+</div>
+<div class="mt-6 pt-4">
+<button class="w-full inline-flex items-center justify-center gap-2 bg-surface-container-low text-primary font-label-md text-label-md py-3 rounded-[12px] hover:bg-primary-fixed transition-colors" onclick="downloadResource('Surah &amp; Juz Memorisation Checklist')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download PDF</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Academy WhatsApp & Digital Community Sanctuary -->
+<section class="w-full pb-10">
+<div class="relative bg-primary rounded-[28px] p-8 md:p-12 text-on-primary shadow-xl overflow-hidden">
+<!-- Decorative Backdrop Star Geometry -->
+<svg class="absolute -right-12 -bottom-12 w-80 h-80 opacity-10 text-secondary-fixed pointer-events-none" fill="currentColor" viewbox="0 0 100 100">
+<polygon points="50 0, 61 35, 98 35, 68 57, 79 91, 50 70, 21 91, 32 57, 2 35, 39 35"></polygon>
+</svg>
+<div class="absolute -left-12 -top-12 w-64 h-64 rounded-full bg-secondary/20 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-7 space-y-4">
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary-container text-secondary-fixed font-label-md text-caption">
+<span class="material-symbols-outlined text-[16px]">stars</span>
+<span>Al-Jazari Lifelong Learning Community</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-primary tracking-tight">
+            Join the Al-Jazari Ilm Circle on WhatsApp
+          </h2>
+<p class="font-body-md text-body-md text-primary-fixed-dim leading-relaxed max-w-xl">
+            Receive curated daily Ayah reflections, Tajweed micro-lessons, phonetics voice memos, and prompt updates on upcoming live webinars directly on your mobile device.
+          </p>
+<div class="flex items-center gap-4 text-primary-fixed-dim font-caption text-caption pt-1">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary-fixed"></span> 3,500+ Active Students</span>
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary-fixed"></span> Zero Spam Policy</span>
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary-fixed"></span> Curated by Faculty</span>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-3">
+<!-- WhatsApp Quick Action Button -->
+<a class="inline-flex items-center justify-center gap-3 bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md px-6 py-4 rounded-[14px] hover:bg-secondary-container transition-all shadow-md font-semibold" href="https://wa.me/919591250910?text=Assalamu%20Alaikum%20Al-Jazari%20Academy%2C%20I%20would%20like%20to%20join%20the%20Ilm%20Circle." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[22px]">chat</span>
+<span>Join WhatsApp Channel (+91 9591250910)</span>
+</a>
+<!-- Email Newsletter Backup -->
+<form class="flex items-center bg-primary-container rounded-[14px] p-1.5 shadow-inner" onsubmit="handleEmailSubscribe(event)">
+<input class="w-full bg-transparent px-3 py-2 font-body-sm text-body-sm text-on-primary placeholder:text-primary-fixed-dim focus:outline-none" id="newsletterEmail" placeholder="Or enter your email for digest..." required="" type="email"/>
+<button class="shrink-0 bg-primary-fixed text-primary px-5 py-2.5 rounded-xl font-label-md text-caption font-semibold hover:bg-surface-bright transition-colors" type="submit">
+              Subscribe
+            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript Handling -->
+<script>
+    // 1. Interactive Hifz Duration Calculator
+    const paceSlider = document.getElementById('hifzPaceSlider');
+    const paceDisplay = document.getElementById('paceDisplay');
+    const projectedTime = document.getElementById('projectedTime');
+    const projectedMonths = document.getElementById('projectedMonths');
+    const milestoneBreakdown = document.getElementById('milestoneBreakdown');
+    const calculatorGauge = document.getElementById('calculatorGauge');
+
+    const paces = [
+      { label: '5 Verses / Day (Gentle Track)', duration: '~3.4 Years', months: '(approx 41 Months)', breakdown: 'Juz 30: 45 Days • 5 Juz: 7 Months • Full Mushaf: Sep 2029', dash: 85 },
+      { label: '10 Verses / Day (Steady Track)', duration: '~2.5 Years', months: '(approx 30 Months)', breakdown: 'Juz 30: 32 Days • 5 Juz: 5.2 Months • Full Mushaf: Oct 2028', dash: 65 },
+      { label: 'Half Page / Day (Moderate Sabak)', duration: '~2.0 Years', months: '(approx 24 Months)', breakdown: 'Juz 30: 25 Days • 5 Juz: 4 Months • Full Mushaf: Apr 2028', dash: 50 },
+      { label: '1 Page / Day (Standard Sabak)', duration: '~1.8 Years', months: '(approx 20 Months)', breakdown: 'Juz 30: 20 Days • 5 Juz: 3.3 Months • Full Mushaf: Nov 2027', dash: 25 },
+      { label: '2 Pages / Day (Intensive Cohort)', duration: '~10 Months', months: '(approx 10.5 Months)', breakdown: 'Juz 30: 10 Days • 5 Juz: 1.6 Months • Full Mushaf: Jan 2027', dash: 10 }
+    ];
+
+    if (paceSlider) {
+      paceSlider.addEventListener('input', (e) => {
+        const val = parseInt(e.target.value, 10);
+        const data = paces[val];
+        paceDisplay.innerText = data.label;
+        projectedTime.innerText = data.duration;
+        projectedMonths.innerText = data.months;
+        milestoneBreakdown.innerText = data.breakdown;
+        calculatorGauge.style.strokeDashoffset = data.dash;
+      });
+    }
+
+    // 2. Makhraj Interactive Anatomical Switcher
+    const makhrajData = {
+      aqsa: {
+        title: "Aqsa al-Halq (Furthest / Lowest Throat)",
+        zone: "Near Vocal Cords",
+        desc: "Originated at the base of the throat closest to the chest. Emits the Hamzah (ء) with light glottal stop and Haa (هـ) with free-flowing soft breath without strain.",
+        audioNotice: "Playing vocal cords anchor: ء and هـ"
+      },
+      wast: {
+        title: "Wast al-Halq (Middle Throat / Epiglottis)",
+        zone: "Epiglottis Region",
+        desc: "Produced right at the center of the throat around the epiglottis. Produces 'Ayn (ع) with gentle muscular constriction and crisp Haa (ح) with clean friction of air.",
+        audioNotice: "Playing middle throat constriction: ع and ح"
+      },
+      adna: {
+        title: "Adna al-Halq (Upper Throat / Uvula Junction)",
+        zone: "Near Soft Palate",
+        desc: "Located at the highest portion of the throat closest to the mouth uvula. Emits Ghayn (غ) and Khaa (خ) characterized by natural sound elevation (Tafkheem / heaviness).",
+        audioNotice: "Playing upper throat friction: غ and خ"
+      }
+    };
+
+    function switchMakhrajPoint(key) {
+      const tabs = ['aqsa', 'wast', 'adna'];
+      tabs.forEach(t => {
+        const el = document.getElementById('tab-' + t);
+        if (t === key) {
+          el.className = "makhraj-tab text-left p-3.5 rounded-[16px] bg-primary text-on-primary shadow-sm transition-all";
+          el.querySelector('.font-caption').className = "font-caption text-[11px] opacity-80 uppercase tracking-wider";
+          el.querySelector('.font-headline-sm').className = "font-headline-sm text-headline-sm mt-0.5 font-bold text-on-primary";
+        } else {
+          el.className = "makhraj-tab text-left p-3.5 rounded-[16px] bg-surface-container-low text-on-surface hover:bg-surface-container transition-all";
+          el.querySelector('.font-caption').className = "font-caption text-[11px] text-on-surface-variant uppercase tracking-wider";
+          el.querySelector('.font-headline-sm').className = "font-headline-sm text-headline-sm mt-0.5 font-semibold text-primary";
+        }
+      });
+
+      const selected = makhrajData[key];
+      document.getElementById('makhrajDetailTitle').innerText = selected.title;
+      document.getElementById('makhrajVocalZone').innerText = selected.zone;
+      document.getElementById('makhrajDetailDesc').innerText = selected.desc;
+    }
+
+    function playMakhrajSample() {
+      const btn = document.getElementById('makhrajAudioBtn');
+      const icon = document.getElementById('playIcon');
+      icon.innerText = "pause";
+      btn.classList.add('bg-secondary');
+
+      setTimeout(() => {
+        icon.innerText = "volume_up";
+        btn.classList.remove('bg-secondary');
+      }, 1800);
+    }
+
+    // 3. Log Sabak Toggle
+    function toggleSabakLogged(btn) {
+      const text = document.getElementById('sabakLogText');
+      if (text.innerText.includes("Logged")) {
+        text.innerText = "Log Today's Sabak & Manzil";
+        btn.className = "mt-6 w-full inline-flex items-center justify-center gap-2 bg-primary-fixed text-primary font-label-md text-label-md px-6 py-3.5 rounded-[14px] hover:bg-primary hover:text-on-primary transition-all shadow-sm";
+      } else {
+        text.innerText = "✓ Sabak Logged for Today!";
+        btn.className = "mt-6 w-full inline-flex items-center justify-center gap-2 bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md px-6 py-3.5 rounded-[14px] shadow-sm transition-all";
+      }
+    }
+
+    // 4. PDF Notice
+    function triggerPdfExportNotice() {
+      alert("Al-Jazari Engine: Generating your custom 604-page Hifz Schedule PDF with Sabak and revision milestones...");
+    }
+
+    function downloadResource(name) {
+      alert("Downloading " + name + " [PDF file initiated]");
+    }
+
+    function openRegistrationModal(title) {
+      alert("Registration form for '" + title + "' initialized. Redirecting to live Google Meet registration cohort...");
+    }
+
+    function shareAyahReflection() {
+      if (navigator.share) {
+        navigator.share({
+          title: "Daily Quran Reflection - Al-Jazari Academy",
+          text: "وَقُلْ رَبِّ زِدْنِي عِلْمًا - 'And say: My Lord, increase me in knowledge.' (Surah Ta-Ha 20:114)",
+          url: window.location.href
+        }).catch(() => {});
+      } else {
+        navigator.clipboard.writeText("وَقُلْ رَبِّ زِدْنِي عِلْمًا - 'And say: My Lord, increase me in knowledge.' (Surah Ta-Ha 20:114) — Al-Jazari Academy");
+        alert("Daily Ayah copied to clipboard!");
+      }
+    }
+
+    function playAyahAudio() {
+      alert("Streaming recitation of Surah Ta-Ha 20:114 (Shaykh Mishary Rashid Alafasy)...");
+    }
+
+    function handleEmailSubscribe(e) {
+      e.preventDefault();
+      const input = document.getElementById('newsletterEmail');
+      alert("JazakAllah Khair! " + input.value + " has been subscribed to the weekly Ilm digest.");
+      input.value = '';
+    }
+
+    // Keyboard search shortcut Ctrl + K
+    window.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        const searchInput = document.getElementById('ilmSearch');
+        if (searchInput) searchInput.focus();
+      }
+    });
+
+    // Category Filter Pills Toggle
+    document.querySelectorAll('.hub-filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.hub-filter-btn').forEach(b => {
+          b.className = "hub-filter-btn px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-primary-fixed hover:text-primary transition-all";
+        });
+        btn.className = "hub-filter-btn px-4 py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm hover:opacity-95 transition-all";
+      });
+    });
+  </script>
+</div></div></main><footer class="w-full bg-primary text-on-primary mt-auto"><div class="max-w-7xl mx-auto px-6 pt-16 pb-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"><div class="space-y-4"><div class="flex items-center gap-3"><img alt="Al-Jazari Educational Academy Logo" class="h-9 w-auto brightness-0 invert object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDGt43QTVor0qI23CZtDlR1IG2FGZcGClqIspTp9yCfSMCh4O-6VW1gT-y1Ljj3sRJIYCE_RVwoKDgXhAJKwzaAeP_93I87kLPRQR7mEw8FhWbEs0Fmv4Az_mAk9neYU6NPXDxUrZIArcD8ea5TKrzTAbvtMWpyEeWBQFytFjY3xSqHfNIX3LiDnOR9Vk_jj7tqL0Q5BUiLzJXsIsRjOwXF2uxSyGSgh_z4KRp8ubqBKg"/><span class="font-headline-sm text-headline-sm text-on-primary">Al-Jazari Academy</span></div><p class="font-body-md text-body-md text-primary-fixed-dim">Knowledge That Inspires Real Change.</p><p class="font-caption text-caption text-primary-fixed-dim/80">Academic Quranic studies, Tajweed certification, Hifz, and classical Tafseer designed with scholarly rigor and contemporary clarity.</p></div><div class="space-y-4"><h4 class="font-headline-sm text-headline-sm text-secondary-fixed">Quick Links</h4><ul class="space-y-2.5"><li class="font-body-sm text-body-sm"><a class="text-primary-fixed-dim hover:text-on-primary transition-colors" data-path="home" href="#">Home</a></li><li class="font-body-sm text-body-sm"><a class="text-primary-fixed-dim hover:text-on-primary transition-colors" data-path="courses" href="#">Courses</a></li><li class="font-body-sm text-body-sm"><a class="text-primary-fixed-dim hover:text-on-primary transition-colors" data-path="ilm-hub" href="#">Ilm Hub</a></li><li class="font-body-sm text-body-sm"><a class="text-primary-fixed-dim hover:text-on-primary transition-colors" data-path="achievements" href="#">Achievements</a></li><li class="font-body-sm text-body-sm"><a class="text-primary-fixed-dim hover:text-on-primary transition-colors" data-path="about" href="#">About Academy</a></li></ul></div><div class="space-y-4"><h4 class="font-headline-sm text-headline-sm text-secondary-fixed">Academics &amp; Faculty</h4><ul class="space-y-2.5"><li class="font-body-sm text-body-sm"><a class="text-primary-fixed-dim hover:text-on-primary transition-colors" data-path="courses" href="#">Tajweed Al-Quran</a></li><li class="font-body-sm text-body-sm"><a class="text-primary-fixed-dim hover:text-on-primary transition-colors" data-path="courses" href="#">Hifz Intensive Track</a></li><li class="font-body-sm text-body-sm"><a class="text-primary-fixed-dim hover:text-on-primary transition-colors" data-path="courses" href="#">Classical Tafseer</a></li><li class="font-body-sm text-body-sm"><a class="text-primary-fixed-dim hover:text-on-primary transition-colors" data-path="achievements" href="#">Ijazah Accreditation</a></li><li class="font-body-sm text-body-sm"><a class="text-primary-fixed-dim hover:text-on-primary transition-colors" data-path="enroll-now" href="#">Student Portal Admissions</a></li></ul></div><div class="space-y-4"><h4 class="font-headline-sm text-headline-sm text-secondary-fixed">Get In Touch</h4><div class="space-y-3 font-body-sm text-body-sm text-primary-fixed-dim"><div class="flex items-start gap-3"><span class="material-symbols-outlined text-[20px] text-secondary-fixed shrink-0">call</span><a class="hover:text-on-primary transition-colors" href="tel:+919591250910">+91 9591250910</a></div><div class="flex items-start gap-3"><span class="material-symbols-outlined text-[20px] text-secondary-fixed shrink-0">mail</span><span>admissions@aljazari.academy</span></div><div class="flex items-start gap-3"><span class="material-symbols-outlined text-[20px] text-secondary-fixed shrink-0">location_on</span><span>Bengaluru, Karnataka, India</span></div></div></div></div><div class="mt-12 pt-8 border-t border-primary-container/40 flex flex-col md:flex-row items-center justify-between gap-4 text-primary-fixed-dim font-caption text-caption"><p>© 2025 Al-Jazari Educational Academy. All rights reserved.</p><div class="flex items-center gap-6"><a class="hover:text-on-primary transition-colors" data-path="contact" href="#">Privacy Policy</a><a class="hover:text-on-primary transition-colors" data-path="contact" href="#">Terms of Enrollment</a><a class="hover:text-on-primary transition-colors" data-path="contact" href="#">Verification Directory</a></div></div></div></footer></body></html>

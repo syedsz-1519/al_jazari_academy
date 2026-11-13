@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Serif:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-container": "#fed486", "on-error": "#ffffff", "on-secondary-container": "#785a18", "on-surface-variant": "#444650", "outline": "#757781", "secondary": "#775a17", "primary-container": "#17316b", "tertiary-fixed-dim": "#71dba2", "background": "#f7f9fd", "surface-variant": "#e0e3e6", "on-surface": "#181c1f", "surface-tint": "#455c98", "surface-container-lowest": "#ffffff", "tertiary-fixed": "#8df8bd", "surface-container-low": "#f2f4f8", "surface-dim": "#d8dade", "on-tertiary-container": "#43b07b", "inverse-primary": "#b2c5ff", "on-tertiary": "#ffffff", "surface": "#f7f9fd", "surface-bright": "#f7f9fd", "on-secondary-fixed": "#261900", "surface-container-high": "#e6e8ec", "error": "#ba1a1a", "tertiary": "#002514", "on-tertiary-fixed-variant": "#005232", "secondary-fixed": "#ffdea3", "error-container": "#ffdad6", "primary-fixed-dim": "#b2c5ff", "surface-container-highest": "#e0e3e6", "inverse-on-surface": "#eff1f5", "on-primary": "#ffffff", "surface-container": "#eceef2", "secondary-fixed-dim": "#e9c175", "on-primary-fixed": "#001848", "on-tertiary-fixed": "#002112", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#5d4200", "on-error-container": "#93000a", "primary": "#001b4f", "inverse-surface": "#2d3134", "tertiary-container": "#003d24", "primary-fixed": "dae2ff", "on-primary-fixed-variant": "#2d447f", "outline-variant": "#c5c6d1", "on-primary-container": "#849bdc", "on-background": "#181c1f" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-desktop": "5.5rem", "margin": "1.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "gutter": "1.5rem", "margin-mobile": "3rem", "space-xl": "2.5rem", "space-md": "1rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "caption": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "arabic-verse": ["Noto Serif"], "body-lg": ["Inter"], "body-sm": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Inter"], "label-md": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "headline-md": ["22px", {"lineHeight": "30px", "fontWeight": "600"}], "headline-lg": ["36px", {"lineHeight": "44px", "fontWeight": "600"}], "headline-xl-mobile": ["38px", {"lineHeight": "48px", "fontWeight": "600"}], "caption": ["13px", {"lineHeight": "18px", "fontWeight": "500"}], "headline-xl": ["52px", {"lineHeight": "64px", "fontWeight": "600"}], "arabic-verse": ["28px", {"lineHeight": "56px", "fontWeight": "400"}], "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}], "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "headline-sm": ["18px", {"lineHeight": "26px", "fontWeight": "600"}], "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "500"}], "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-sm text-body-sm text-on-surface flex flex-col min-h-screen relative"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(23,49,107,0.06)]"><div class="h-14 px-3 flex items-center justify-between"><div class="flex items-center gap-2"><button aria-label="Go back" class="w-9 h-9 rounded-full bg-surface-container-low flex items-center justify-center text-primary hover:bg-surface-variant transition-colors" onclick="window.history.back()"><span class="material-symbols-outlined text-[20px]">arrow_back</span></button><h1 class="font-headline-sm text-headline-sm text-primary tracking-tight truncate max-w-[170px]">Privacy Policy &amp; Terms (Mobile)</h1></div><div class="flex items-center gap-1.5"><a aria-label="Call Hotline" class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-primary hover:bg-surface-variant transition-colors" href="tel:+919591250910"><span class="material-symbols-outlined text-[18px]">call</span></a><a aria-label="WhatsApp Hotline" class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-primary hover:bg-surface-variant transition-colors" href="https://wa.me/919591250910" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span></a><a class="h-8 px-3 rounded-full bg-secondary-fixed text-on-secondary-fixed font-caption text-caption flex items-center justify-center hover:bg-secondary-fixed-dim transition-colors shadow-sm" data-path="al-jazari-academy---enroll-(mobile)" href="#">Enroll</a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-14 pb-safe bg-surface"><div class="flex flex-col w-full pb-16">
+<!-- Star Pattern Ambient Backdrop Accent -->
+<div class="relative px-4 pt-4 pb-2 bg-gradient-to-b from-surface-container-low to-surface overflow-hidden">
+<!-- Subtle Star Geometry SVG Watermark -->
+<svg class="absolute -right-12 -top-12 w-48 h-48 opacity-[0.04] text-primary pointer-events-none" fill="currentColor" viewbox="0 0 100 100">
+<polygon points="50,0 61,35 98,35 68,57 79,91 50,70 21,91 32,57 2,35 39,35"></polygon>
+<polygon opacity="0.6" points="50,100 61,65 98,65 68,43 79,9 50,30 21,9 32,43 2,65 39,65"></polygon>
+</svg>
+<!-- Breadcrumb & Badge -->
+<div class="flex items-center justify-between gap-2 mb-3">
+<div class="flex items-center gap-1.5 font-caption text-caption text-on-surface-variant truncate">
+<span>Home</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-medium truncate">Privacy &amp; Terms</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-caption text-caption shrink-0">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Effective Mar 2026</span>
+</span>
+</div>
+<!-- Title and Subtitle -->
+<div class="relative z-10 mb-2">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">Privacy Policy &amp; Terms</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+        Our scholarly covenant protecting student privacy, academic dignity, and ethical tuition standards.
+      </p>
+</div>
+<!-- Key Trust Badges Grid -->
+<div class="grid grid-cols-2 gap-2 mt-4 mb-2">
+<div class="bg-surface-container-lowest p-2.5 rounded-xl shadow-[0_4px_16px_rgba(23,49,107,0.05)] flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed/40 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div class="min-w-0">
+<p class="font-caption text-caption font-semibold text-primary truncate">Minor Shielded</p>
+<p class="font-caption text-caption text-on-surface-variant text-[11px] truncate">Full parent access</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-xl shadow-[0_4px_16px_rgba(23,49,107,0.05)] flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-container/60 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</div>
+<div class="min-w-0">
+<p class="font-caption text-caption font-semibold text-primary truncate">Strict Zero-Leak</p>
+<p class="font-caption text-caption text-on-surface-variant text-[11px] truncate">No session recording</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Table of Contents Scroll Bar -->
+<div class="sticky top-14 z-30 bg-surface/95 backdrop-blur-md py-2.5 px-4 shadow-[0_2px_10px_rgba(23,49,107,0.04)] overflow-x-auto no-scrollbar">
+<div class="flex items-center gap-2 w-max">
+<a class="toc-chip px-3 py-1.5 rounded-full bg-primary text-on-primary font-caption text-caption whitespace-nowrap shadow-sm transition-transform active:scale-95 flex items-center gap-1.5" href="#section-data">
+<span class="material-symbols-outlined text-[14px]">shield_person</span>
+        1. Data Protection
+      </a>
+<a class="toc-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-caption text-caption whitespace-nowrap hover:bg-surface-variant transition-colors flex items-center gap-1.5" href="#section-video">
+<span class="material-symbols-outlined text-[14px]">videocam_off</span>
+        2. Video Privacy
+      </a>
+<a class="toc-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-caption text-caption whitespace-nowrap hover:bg-surface-variant transition-colors flex items-center gap-1.5" href="#section-sisters">
+<span class="material-symbols-outlined text-[14px]">female</span>
+        3. Sisters Wing
+      </a>
+<a class="toc-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-caption text-caption whitespace-nowrap hover:bg-surface-variant transition-colors flex items-center gap-1.5" href="#section-tuition">
+<span class="material-symbols-outlined text-[14px]">currency_rupee</span>
+        4. Tuition &amp; Refunds
+      </a>
+<a class="toc-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-caption text-caption whitespace-nowrap hover:bg-surface-variant transition-colors flex items-center gap-1.5" href="#section-rescheduling">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+        5. Rescheduling
+      </a>
+<a class="toc-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-caption text-caption whitespace-nowrap hover:bg-surface-variant transition-colors flex items-center gap-1.5" href="#section-sanad">
+<span class="material-symbols-outlined text-[14px]">workspace_premium</span>
+        6. Sanad Rules
+      </a>
+</div>
+</div>
+<!-- Main Content Sections -->
+<div class="px-4 flex flex-col gap-4 mt-3">
+<!-- Section 1: Minor Data Protection -->
+<section class="scroll-mt-28 bg-surface-container-lowest rounded-2xl p-4 shadow-[0_6px_20px_rgba(23,49,107,0.06)] relative overflow-hidden" id="section-data">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">family_restroom</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-secondary font-semibold">SECTION 01</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-tertiary-fixed/30 text-on-tertiary-fixed-variant font-caption text-[11px]">Strict ISO Compliance</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-0.5">Student &amp; Minor Privacy Guarantee</h3>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">
+        At Al-Jazari Academy, students under 18 years enjoy rigorous custodial protections. No personal contact information, phone numbers, or residential data are ever requested directly from underage learners.
+      </p>
+<div class="mt-3 bg-surface-container-low rounded-xl p-3 flex flex-col gap-2">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<p class="font-body-sm text-body-sm text-on-surface"><span class="font-medium text-primary">Parental Co-Access:</span> Guardians receive identical access to homework logs, progress reviews, and teacher feedback dashboards.</p>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<p class="font-body-sm text-body-sm text-on-surface"><span class="font-medium text-primary">Zero Commercial Profiling:</span> Student academic records are never monetized, brokered, or used for behavioral ad targeting.</p>
+</div>
+</div>
+</section>
+<!-- Section 2: Video Privacy & No Recordings -->
+<section class="scroll-mt-28 bg-surface-container-lowest rounded-2xl p-4 shadow-[0_6px_20px_rgba(23,49,107,0.06)]" id="section-video">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">no_photography</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-secondary font-semibold">SECTION 02</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant font-caption text-[11px]">Sanctity of Live Halaqah</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-0.5">One-to-One Session Security</h3>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">
+        Live Quran recitation requires utmost vulnerability and presence. We preserve an uncompromised sacred atmosphere during every private session.
+      </p>
+<!-- Interactive Accordion item for Video Terms -->
+<details class="group mt-3 bg-surface-container-low rounded-xl overflow-hidden" open="">
+<summary class="flex items-center justify-between p-3 font-headline-sm text-[15px] text-primary cursor-pointer select-none">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">lock_clock</span>
+            Prohibition of Session Archiving
+          </span>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-200 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-3 pb-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Neither tutors nor students are authorized to screen-record, screenshot, or distribute audio-video feeds of live classes without written supervisory consent from the Academic Dean.
+        </div>
+</details>
+<details class="group mt-2 bg-surface-container-low rounded-xl overflow-hidden">
+<summary class="flex items-center justify-between p-3 font-headline-sm text-[15px] text-primary cursor-pointer select-none">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">security</span>
+            End-to-End Encrypted Feeds
+          </span>
+<span class="material-symbols-outlined text-on-surface-variant transition-transform duration-200 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-3 pb-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Sessions run over peer-to-peer WebRTC encrypted tunnels with data centers deployed in Mumbai &amp; Frankfurt, compliant with Indian DPDP Act 2023.
+        </div>
+</details>
+</section>
+<!-- Section 3: Sisters Wing -->
+<section class="scroll-mt-28 bg-gradient-to-br from-surface-container-lowest to-[#fbf7fc] rounded-2xl p-4 shadow-[0_6px_20px_rgba(23,49,107,0.06)]" id="section-sisters">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-[#fae8f3] text-[#7d2050] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-[#7d2050] font-semibold">SECTION 03</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-[#f6d7e8] text-[#5e1239] font-caption text-[11px]">Dedicated Faculty</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-0.5">Sisters Wing Absolute Privacy</h3>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">
+        The Sisters Wing operates under autonomous administrative oversight with certified female Ustadhahs to uphold complete modesty and peace of mind.
+      </p>
+<div class="grid grid-cols-1 gap-2 mt-3">
+<div class="flex items-start gap-2.5 p-2.5 rounded-xl bg-surface-container-lowest/80">
+<span class="material-symbols-outlined text-[#7d2050] text-[20px] shrink-0">woman</span>
+<div>
+<h4 class="font-headline-sm text-[14px] text-primary">100% Female Faculty &amp; Coordinators</h4>
+<p class="font-body-sm text-[13px] text-on-surface-variant mt-0.5 leading-snug">All evaluations, diagnostic sessions, and support tickets are managed solely by verified female educators.</p>
+</div>
+</div>
+<div class="flex items-start gap-2.5 p-2.5 rounded-xl bg-surface-container-lowest/80">
+<span class="material-symbols-outlined text-[#7d2050] text-[20px] shrink-0">visibility_off</span>
+<div>
+<h4 class="font-headline-sm text-[14px] text-primary">Confidential Assessment Portals</h4>
+<p class="font-body-sm text-[13px] text-on-surface-variant mt-0.5 leading-snug">Audio submissions for Tajweed critique are stored in restricted access folders accessible only to your assigned teacher.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Tuition & Refunds -->
+<section class="scroll-mt-28 bg-surface-container-lowest rounded-2xl p-4 shadow-[0_6px_20px_rgba(23,49,107,0.06)]" id="section-tuition">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">account_balance_wallet</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-secondary font-semibold">SECTION 04</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-fixed-dim/50 text-on-secondary-fixed font-caption text-[11px]">Fair Dealings</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-0.5">Honest Tuition &amp; 7-Day Refund</h3>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">
+        We respect Islamic commerce principles: complete clarity, zero deceptive terms, and unconstrained freedom to pause your learning.
+      </p>
+<!-- Key Policy Callout Card -->
+<div class="mt-3 p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-[14px] text-primary font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">published_with_changes</span>
+            7-Day Money-Back Guarantee
+          </span>
+<span class="font-caption text-caption text-secondary font-semibold">100% Refund</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          If your assigned teacher does not match your learning style after your first week of classes, request an immediate full refund or a complimentary teacher reassignment.
+        </p>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-2">
+<div class="p-2.5 bg-surface-container-low rounded-xl">
+<p class="font-headline-sm text-[13px] text-primary">Pause Anytime</p>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5 text-[12px]">Freeze membership up to 45 days for Umrah or exams.</p>
+</div>
+<div class="p-2.5 bg-surface-container-low rounded-xl">
+<p class="font-headline-sm text-[13px] text-primary">Zero Lock-In</p>
+<p class="font-caption text-caption text-on-surface-variant mt-0.5 text-[12px]">Billed monthly. Cancel your subscription in 1 tap.</p>
+</div>
+</div>
+</section>
+<!-- Section 5: Attendance & Rescheduling -->
+<section class="scroll-mt-28 bg-surface-container-lowest rounded-2xl p-4 shadow-[0_6px_20px_rgba(23,49,107,0.06)]" id="section-rescheduling">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">event_repeat</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-secondary font-semibold">SECTION 05</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container text-primary font-caption text-[11px]">4h Notice Rule</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-0.5">Attendance &amp; Make-Up Policy</h3>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">
+        Ustadhs reserve their dedicated time for each student. To maintain schedule integrity, rescheduling is streamlined through our student app.
+      </p>
+<div class="mt-3 flex flex-col gap-2">
+<div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container-low">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary font-caption text-caption flex items-center justify-center font-bold shrink-0">1</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">Notify your instructor at least <span class="font-semibold text-primary">4 hours</span> in advance via WhatsApp or student portal.</p>
+</div>
+<div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container-low">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary font-caption text-caption flex items-center justify-center font-bold shrink-0">2</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">Receive up to <span class="font-semibold text-primary">2 complimentary makeup sessions</span> per calendar month without penalty.</p>
+</div>
+<div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container-low">
+<span class="w-6 h-6 rounded-full bg-secondary-fixed text-on-secondary-fixed font-caption text-caption flex items-center justify-center font-bold shrink-0">3</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">Teacher-initiated cancellations are always rescheduled or fully credited.</p>
+</div>
+</div>
+</section>
+<!-- Section 6: Sanad Integrity -->
+<section class="scroll-mt-28 bg-surface-container-lowest rounded-2xl p-4 shadow-[0_6px_20px_rgba(23,49,107,0.06)]" id="section-sanad">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">history_edu</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-secondary font-semibold">SECTION 06</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-caption text-[11px]">Academic Honor</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mt-0.5">Sanad &amp; Accreditation Integrity</h3>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">
+        The granting of Ijazah with unbroken chain (Sanad Muttasil) back to the Prophet ﷺ is a solemn religious trust (Amanah).
+      </p>
+<div class="mt-3 p-3 rounded-xl bg-surface-container-low font-body-sm text-body-sm text-on-surface leading-relaxed">
+<p class="font-medium text-primary mb-1">Non-Commercial Merit Criteria:</p>
+        Ijazah certificates cannot be bought or automatically guaranteed by subscription duration. Issuance is solely conditioned upon flawless oral recitation and examination by the Board of Reciters.
+      </div>
+</section>
+<!-- Data Privacy Officer Contact Bento Box -->
+<div class="bg-gradient-to-br from-primary-container to-primary rounded-2xl p-5 text-on-primary shadow-[0_8px_24px_rgba(23,49,107,0.14)] relative overflow-hidden">
+<!-- Watermark Crest -->
+<span class="material-symbols-outlined text-white/5 absolute -bottom-4 -right-4 text-[120px] pointer-events-none select-none">policy</span>
+<div class="relative z-10">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-on-primary/10 text-primary-fixed font-caption text-caption mb-2">
+<span class="material-symbols-outlined text-[14px]">contact_mail</span>
+          Grievance Redressal
+        </span>
+<h3 class="font-headline-md text-headline-md text-on-primary tracking-tight">Data Privacy Officer</h3>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim mt-1.5 leading-relaxed">
+          Questions regarding student data erasure, audit reports, or jurisdictional privacy rights under Indian cyber regulations?
+        </p>
+<div class="mt-4 flex flex-col gap-2.5">
+<a class="flex items-center justify-between p-3 rounded-xl bg-white/10 hover:bg-white/15 transition-colors" href="mailto:privacy@aljazari.edu.in">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">mail</span>
+<span class="font-body-md text-body-md text-on-primary font-medium truncate">privacy@aljazari.edu.in</span>
+</div>
+<span class="material-symbols-outlined text-on-primary/60 text-[18px]">open_in_new</span>
+</a>
+<div class="flex items-center gap-2 px-1 text-primary-fixed-dim font-caption text-caption">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Response guarantee: Within 24-48 business hours</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Legal Versioning Footer -->
+<div class="py-4 text-center">
+<p class="font-caption text-caption text-on-surface-variant">
+        Al-Jazari Educational Academy Pvt. Ltd. © 2026<br/>
+        Bangalore, Karnataka, India • Version 4.2.1
+      </p>
+</div>
+</div>
+<!-- Docked Cookie Notice Bar -->
+<div class="fixed bottom-20 inset-x-3 z-40 bg-primary/95 backdrop-blur-xl text-on-primary p-3.5 rounded-2xl shadow-[0_12px_32px_rgba(0,27,79,0.28)] flex items-center justify-between gap-3 transition-transform duration-300" id="cookie-bar">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-secondary-fixed text-[22px] shrink-0">cookie</span>
+<p class="font-caption text-caption text-on-primary leading-tight">
+        We use essential cookies for secure student portal sessions.
+      </p>
+</div>
+<button class="px-3.5 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-caption text-caption font-semibold shrink-0 shadow hover:bg-secondary-fixed-dim transition-transform active:scale-95" id="accept-cookies-btn">
+      Accept
+    </button>
+</div>
+</div>
+<script>
+  // Smooth scroll and active tab pill styling
+  document.addEventListener('DOMContentLoaded', () => {
+    const chips = document.querySelectorAll('.toc-chip');
+    chips.forEach(chip => {
+      chip.addEventListener('click', (e) => {
+        chips.forEach(c => {
+          c.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+          c.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        chip.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        chip.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+      });
+    });
+
+    // Cookie bar dismissal
+    const cookieBtn = document.getElementById('accept-cookies-btn');
+    const cookieBar = document.getElementById('cookie-bar');
+    if (cookieBtn && cookieBar) {
+      cookieBtn.addEventListener('click', () => {
+        cookieBar.classList.add('translate-y-28', 'opacity-0');
+        setTimeout(() => cookieBar.remove(), 300);
+      });
+    }
+  });
+</script></main><div class="fixed bottom-6 right-4 z-40"><a aria-label="Chat on WhatsApp" class="w-12 h-12 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-[0_4px_16px_rgba(37,211,102,0.35)] hover:scale-105 active:scale-95 transition-transform" href="https://wa.me/919591250910" target="_blank"><span class="material-symbols-outlined text-[26px]">chat</span></a></div></body></html>
